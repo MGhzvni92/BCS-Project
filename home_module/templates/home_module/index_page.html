@@ -1,0 +1,465 @@
+{% extends 'shared/_layout.html' %}
+
+{% block content %}
+<section id="slider">
+        <div class="overlay">
+            <div class="container">
+                <div class="slider-desc">
+                    <h1>شرکت فنی مهندسی ویژن تک</h1>
+                    <div class="typed">
+                        <span id="typed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="container">
+            <div class="row">
+                <div class="info-item">
+                    <div class="info-item-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="info-item-desc">
+                        <p>شنبه تا پنجشنبه 8 صبح تا 18 بعد از ظهر </p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-item-icon">
+                        <i class="fas fa-map-marked"></i>
+                    </div>
+                    <div class="info-item-desc">
+                        <p> اصفهان مجموعه اداری 22 بهمن </p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-item-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <div class="info-item-desc phone">
+                        <p>شماره : 03538325678</p>
+                        <p class="mobile">شماره موبایل: 09121111111</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="base-story">
+        <div class="container">
+            <div class="row">
+                <div class="base-video">
+                    <video poster="/static/images/covervideo.jpg" controls>
+                        <source src="video/construction.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="base-story">
+                    <div class="story-title">
+                        <h3>چه کاری برای شما انجام میدهیم؟</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                    </div>
+                    <div class="base-story-item">
+                        <div>
+                            <a href="">
+                                <i class="fas fa-hard-hat"></i>
+                                <h4>محاسبه اسکور تکی</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <i class="fas fa-tools"></i>
+                                <h4> محاسبه اسکور گروهی</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <i class="fas fa-wrench"></i>
+                                <h4>نمودار تغییرات دوره ای</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <i class="fas fa-pencil-ruler"></i>
+                                <h4>میانگین اسکور هر گروه</h4>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="services">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title">
+                    <h1>خدمات ما</h1>
+                </div>
+                <div class="row">
+                    <div class="service">
+                        <div class="tab-button">
+                            <ul>
+                                <li id="tab-one" class="active">محاسبه اسکور تکی </li>
+                                <li id="tab-two">محاسبه اسکور گروهی </li>
+                                <li id="tab-three">نمودار تغییرات دوره ای </li>
+                                <li id="tab-four">ثبت و مشاهده اطلاعات هر گروه</li>
+                                <li id="tab-five">امکان جستجو درون گروه ها</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab hide active" id="tab-one-content">
+                                <div class="content">
+                                    <div class="content-title">
+                                        <h3>محاسبه اسکور تکی</h3>
+                                       <strong> <p>تشخیص زودهنگام بیماری ها</p>
+                                        <p>هشدار در صورت افت BCS بیش از یک واحد ظرف دو هفته</p></strong><br>
+
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان
+                                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                            است و
+                                            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                            کاربردی
+                                            می باشد</p>
+
+                                    </div>
+
+                                    <div class="content-img">
+                                        <img src="/static/images/app.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tab-content-link">
+                                    <a href="">بیشتر بدانید!</a>
+                                </div>
+                            </div>
+                            <div class="tab hide" id="tab-two-content">
+                                <div class="content">
+                                    <div class="content-title">
+                                        <h3>محاسبه اسکور گروهی</h3>
+                                        <strong><p> قابلیت نمایش اسکور گروهی بر اساس شماره بهاربند</p>
+                                        <p> قابلیت نمایش اسکور گروهی بر اساس دفعات زایش</p>
+                                        <p> قابلیت نمایش اسکور گروهی بر اساس مرحله شیردهی</p></strong><br>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان
+                                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                            است و
+                                            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                            کاربردی
+                                            می باشد</p>
+
+                                    </div>
+
+{#                                    <div class="content-img">#}
+{#                                        <img src="/static/images/darbast.jpg" alt="">#}
+{#                                    </div>#}
+                                </div>
+                                <div class="tab-content-link">
+                                    <a href="">بیشتر بدانید!</a>
+                                </div>
+                            </div>
+                            <div class="tab hide" id="tab-three-content">
+                                <div class="content">
+                                    <div class="content-title">
+                                        <h3>نمودار تغییرات دوره ای</h3>
+                                        <strong><p>قابلیت نمایش نمودار شرایط فعلی هر دام نسبت به قبل</p>
+                                        <p>قابلیت نمایش تغییرات دوره ای مثلا ماهانه برای گروه های مختلف</p></strong><br>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان
+                                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                            است و
+                                            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                            کاربردی
+                                            می باشد</p>
+                                    </div>
+
+{#                                    <div class="content-img">#}
+{#                                        <img src="/static/images/1417.jpg" alt="">#}
+{#                                    </div>#}
+                                </div>
+                                <div class="tab-content-link">
+                                    <a href="">بیشتر بدانید!</a>
+                                </div>
+                            </div>
+                            <div class="tab hide" id="tab-four-content">
+                                <div class="content">
+                                    <div class="content-title">
+                                        <h3>ثبت و مشاهده اطلاعات</h3>
+                                        <strong><p>امکان اضافه کردن دامداری</p>
+                                        <p>ورود و مشاهده اطلاعات هر راس دام</p></strong><br>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان
+                                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                            است و
+                                            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                            کاربردی
+                                            می باشد</p>
+                                    </div>
+
+{#                                    <div class="content-img">#}
+{#                                        <img src="/static/images/betonriz.jpg" alt="">#}
+{#                                    </div>#}
+                                </div>
+                                <div class="tab-content-link">
+                                    <a href="">بیشتر بدانید!</a>
+                                </div>
+                            </div>
+                            <div class="tab hide" id="tab-five-content">
+                                <div class="content">
+                                    <div class="content-title">
+                                        <h3>امکان جستجو در گروه ها</h3>
+                                        <strong><p>امکان جستجو درون گروه های مختلف بر اساس بهاربندها</p></strong><br>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان
+                                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                                            است و
+                                            برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                            کاربردی
+                                            می باشد</p>
+                                    </div>
+
+{#                                    <div class="content-img">#}
+{#                                        <img src="/static/images/takhrib.jpg" alt="">#}
+{#                                    </div>#}
+                                </div>
+                                <div class="tab-content-link">
+                                    <a href="">بیشتر بدانید!</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>درباره ما</h1>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        کاربردی
+                        می باشد</p>
+                    <button>بیشتر بخوانید</button>
+                </div>
+                <div class="about-team">
+                    <div class="about-team-item">
+                        <img src="/static/images/Ax/ghazvini.jpg" alt="">
+                        <div class="about-slide">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                            <h4>مینا قزوینی</h4>
+                            <h5>طراح UI,UX</h5>
+                        </div>
+                    </div>
+                    <div class="about-team-item">
+                        <img src="/static/images/Ax/Labe%20khandagh.jpg" alt="">
+                        <div class="about-slide">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                            <h4>متین لب خندق</h4>
+                            <h5>مهندس فنی</h5>
+                        </div>
+                    </div>
+                    <div class="about-team-item">
+                        <img src="/static/images/Ax/karami.jpeg" alt="">
+                        <div class="about-slide">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                            <h4>علیرضا کرمی</h4>
+                            <h5>مهندس فنی</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+-->
+
+    <section id="beautiText">
+        <div class="container">
+            <div class="row">
+                <div class="beautitext">
+                    <h1>اولین و معتبرترین شرکت طراحی سیستم های هوشمند </h1>
+                    <a href="">اینجا کلیک کنید</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <div class="section-title">
+                <h1>مقالات</h1>
+                <button>اینجا کلیک کنید</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <ul id="lightSlider">
+                    <li>
+                        <div class="box-item">
+                            <a href="">
+                                <img src="/static/images/a1.jpg" alt="">
+                                <h4>لورم ایپسوم</h4>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <a href="">
+                                <img src="/static/images/a2.jpg" alt="">
+                                <h4>لورم ایپسوم</h4>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <a href="">
+                                <img src="/static/images/a3.jpg" alt="">
+                                <h4>لورم ایپسوم</h4>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <a href="">
+                                <img src="/static/images/a4.jpg" alt="">
+                                <h4>لورم ایپسوم</h4>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <a href="">
+                                <img src="/static/images/a5.jpg" alt="">
+                                <h4>لورم ایپسوم</h4>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-item">
+                            <a href="">
+                                <img src="/static/images/a6.jpg" alt="">
+                                <h4>لورم ایپسوم</h4>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="article">
+        <div class="article-overlay">
+            <div class="container">
+                <div class="section-title">
+                    <h1>پروژه ها</h1>
+                    <button>اینجا کلیک کنید</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="article-post">
+                        <div class="post">
+                            <a href="" class="post-img">
+                                <img src="/static/images/project.jpg" alt="">
+                                <div class="post-overlay"><i class="fas fa-search"></i></div>
+                                <div class="date">
+                                    <h2><i class="far fa-calendar-alt"></i> فروردین 1400</h2>
+                                    <h2><i class="fas fa-comment-alt"></i>5 کامنت</h2>
+                                </div>
+                            </a>
+                            <div class="post-desc">
+                                <h3><a href="#">دامداری مدرن</a></h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <a href="" class="post-img">
+                                <img src="/static/images/app.jpg" alt="">
+                                <div class="post-overlay"><i class="fas fa-search"></i></div>
+                                <div class="date">
+                                    <h2><i class="far fa-calendar-alt"></i>  مهر 1400</h2>
+                                    <h2><i class="fas fa-comment-alt"></i>5 کامنت</h2>
+                                </div>
+                            </a>
+                            <div class="post-desc">
+                                <h3><a href="#">اپلیکیشن هوشمند</a></h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <a href="" class="post-img">
+                                <img src="/static/images/pro.jpg" alt="">
+                                <div class="post-overlay"><i class="fas fa-search"></i></div>
+                                <div class="date">
+                                    <h2><i class="far fa-calendar-alt"></i>  شهرریور 1401</h2>
+                                    <h2><i class="fas fa-comment-alt"></i>5 کامنت</h2>
+                                </div>
+                            </a>
+                            <div class="post-desc">
+                                <h3><a href="#">دامداری مدرن</a></h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section id="partner">
+         <div class="container">
+             <div class="row">
+                 <ul>
+
+                     <li><a href=""><img src="/static/images/company-1.jpg" alt=""></a></li>
+                     <li><a href=""><img src="/static/images/company-2.jpg" alt=""></a></li>
+                     <li><a href=""><img src="/static/images/company-3.jpg" alt=""></a></li>
+                     <li><a href=""><img src="/static/images/company-4.jpg" alt=""></a></li>
+
+                 </ul>
+             </div>
+         </div>
+     </section>
+     -->
+{% endblock %}

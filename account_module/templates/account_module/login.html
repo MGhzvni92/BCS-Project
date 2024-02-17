@@ -1,0 +1,29 @@
+{% extends 'shared/_layout.html' %}
+
+{% block title %}ورود{% endblock %}
+
+{% block content %}
+<div class="form-container">
+            <h1>صفحه ورود مدیران</h1>
+            <form action="#">
+                <div class="form-control">
+<!--                    <label for="username">نام کاربری</label>-->
+                    <input type="text" placeholder="نام کاربری" name="username" id="username">
+                </div>
+                <div class="form-control">
+<!--                    <label for="password">رمز عبور </label>-->
+                    <input type="password" placeholder="رمز عبور" name="username" id="password">
+                </div>
+                <span class="remember">
+                    <input type="checkbox">
+                    مرا به خاطر بسپار
+                </span>
+                <div class="form-control">
+                    <input type="submit" value="ورود">
+                </div>
+            </form>
+            <div class="forget-password">
+                <a href="#">بازیابی رمز عبور</a>
+            </div>
+        </div>
+{% endblock %}

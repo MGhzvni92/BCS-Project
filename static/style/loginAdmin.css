@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/login2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0,0.3), rgba(0, 0, 0, 0.3));
+    
+    width: 50px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px black;
+    text-align: center;   
+/*    align-items: center;*/
+
+}
+
+.form-container h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: 1px solid white; 
+}
+
+.form-control{
+    text-align: center;
+    font-size: 20px;
+/*    display: flex;*/
+/*    flex-direction: column;*/
+}
+
+.form-control label{
+    color: white;
+}
+
+.form-control input{
+   width: 100%;
+    display: block;
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.remember{
+    color: white;
+    direction: rtl;
+}
+
+.form-control input[type="text"], input[type="password"]{
+    border-radius: 24px;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    transition:0.5s ;
+/*    align-items: center;*/
+
+}
+
+
+.form-control input[type="text"]:focus, input[type="password"]:focus{
+        width: 350px;
+}
+
+.form-control input[type="submit"]{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    border-radius: 24px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+.form-control input[type="submit"]:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.forget-password{
+    text-align: center;
+}
+
+
+.forget-password a{
+    text-decoration:none;
+    color: white;
+/*
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+*/
+}
+
+/*
+.forget-password a:hover{
+    opacity: 1;
+}
+*/
+
+/* *************************************************************************************************** */
+
+@media(min-width:320px){
+    .form-container{
+        width: 90% !important;
+    }
+}
+
+
+@media(min-width:481px){
+    .form-container{
+        width: 80% !important;
+    }
+}
+
+@media(min-width:641px){
+    .form-container{
+        width: 50% !important;
+    }
+}
+
+@media(min-width:961px){
+    .form-container{
+        width: 50% !important;
+    }
+}
+
+@media(min-width:1025px){
+    .form-container{
+        width: 50% !important;
+    } 
+}

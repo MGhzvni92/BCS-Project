@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from mwhtml.ir/landrick/dashboard/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Sep 2022 09:33:44 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <title> Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Premium Bootstrap 5 Admin Dashboard Template" />
+        <meta name="keywords" content="Saas, CRM, Admin, Dashboard, Modern, Classic" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="email" content="support@shreethemes.in" />
+        <meta name="website" content="https://shreethemes.in/" />
+        <meta name="Version" content="v3.8.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="/static/assets/images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- simplebar -->
+        <link href="/static/assets/css/simplebar.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="/static/assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/static/assets/css/tabler-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../../unicons.iconscout.com/release/v3.0.6/css/line.css"  rel="stylesheet">
+        <!-- Css -->
+        <link href="/static/assets/css/style-rtl.css" rel="stylesheet" type="text/css" id="theme-opt" />
+
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+
+        <!-- Hero Start -->
+        <section class="bg-home bg-circle-gradiant d-flex align-items-center">
+            <div class="bg-overlay bg-overlay-white"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-signin p-4 bg-white rounded shadow">
+                            <form>
+                                <a href="index.html"><img src="/static/assets/images/logo-icon.png" class="avatar avatar-small mb-4 d-block mx-auto" alt=""></a>
+                                <h5 class="mb-3 text-center">ورود</h5>
+
+                                <div class="form-floating mb-2">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">آدرس ایمیل</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="رمز عبور">
+                                    <label for="floatingPassword">رمز عبور</label>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">مرا بخاطر بسپار</label>
+                                        </div>
+                                    </div>
+                                    <p class="forgot-pass mb-0"><a href="reset-password.html" class="text-dark small fw-bold">فراموشی رمز عبور</a></p>
+                                </div>
+
+                                <button class="btn btn-primary w-100" type="submit">ورود</button>
+
+{#                                <div class="col-12 text-center mt-3">#}
+{#                                    <p class="mb-0 mt-3"><small class="text-dark me-2">حساب کاربری ندارید؟</small> <a href="signup.html" class="text-dark fw-bold">ثبت نام</a></p>#}
+{#                                </div><!--end col-->#}
+
+                                <p class="mb-0 text-muted mt-3 text-center">© <script>document.write(new Date().getFullYear())</script> ویژن تک.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- javascript -->
+        <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+        <!-- simplebar -->
+        <script src="/static/assets/js/simplebar.min.js"></script>
+        <!-- Icons -->
+        <script src="/static/assets/js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="/static/assets/js/plugins.init.js"></script>
+        <script src="/static/assets/js/app.js"></script>
+
+    </body>
+
+
+<!-- Mirrored from mwhtml.ir/landrick/dashboard/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Sep 2022 09:33:44 GMT -->
+</html>
+
+
+{#{% extends 'shared/_layout.html' %}#}
+{#{% load static %}#}
+{#{% block title %}ثبت نام{% endblock %}#}
+{##}
+{#{% block content %}#}
+{#<div class="form-container">#}
+{#            <h1>صفحه ثبت نام</h1>#}
+{#            <form  method="post" action="{% url 'register_page' %}">#}
+{#                {% csrf_token %}#}
+{##}
+{#                {{ register_form }}#}
+{##}
+{#                {{ register_form.email.label_tag }}#}
+{#                {{ register_form.email }}#}
+{#                {{ register_form.email.errors }}#}
+{##}
+{#                {{ register_form.password.label_tag }}#}
+{#                {{ register_form.password }}#}
+{#                {{ register_form.password.errors }}#}
+{##}
+{#                {{ register_form.confirm_password.label_tag }}#}
+{#                {{ register_form.confirm_password }}#}
+{#                {{ register_form.confirm_password.errors }}#}
+{##}
+{#                {{ register_form.errors }}#}
+{##}
+{#                <div class="form-control">#}
+{#<!--                    <label for="username">نام کاربری</label>-->#}
+{#                    <input type="text" placeholder="نام کاربری" name="username" id="username">#}
+{#                </div>#}
+{#                <div class="form-control">#}
+{#<!--                    <label for="password">رمز عبور </label>-->#}
+{#                    <input type="password" placeholder="رمز عبور" name="username" id="password">#}
+{#                </div>#}
+{#                <div class="form-control">#}
+{#<!--                    <label for="password">تکرار رمز عبور </label>-->#}
+{#                    <input type="password" placeholder="تکرار رمز عبور" name="username" id="password">#}
+{#                </div>#}
+{#                <span class="remember">#}
+{#                    <input type="checkbox">#}
+{#                    مرا به خاطر بسپار#}
+{#                </span>#}
+{#                <div class="form-control">#}
+{#                    <input type="submit" value="ثبت نام">#}
+{#                </div>#}
+{#            </form>#}
+{#            <div class="forget-password">#}
+{#                <a href="#">بازیابی رمز عبور</a>#}
+{#            </div>#}
+{#        </div>#}
+{#{% endblock %}#}
