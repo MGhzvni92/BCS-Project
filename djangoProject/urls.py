@@ -3,7 +3,7 @@ from django.urls import path, include
 
 
 v1_urlpatterns = [    
-    path('api/', include('bcs_api.urls')),    
+    path('', include('bcs_api.urls')),    
 ]
 
 urlpatterns = [

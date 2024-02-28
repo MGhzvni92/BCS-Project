@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_render_partial',
     'account_module',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
