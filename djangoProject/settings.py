@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bcs',
     'bcs_api',
+    'chart',
     'home_module',
     'django_render_partial',
     'account_module',
