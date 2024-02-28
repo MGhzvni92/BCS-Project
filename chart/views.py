@@ -7,7 +7,8 @@ def show_chart(request):
     if not cow_id:
         return render(request, 'chart/show_chart.html')
 
-    categories = BcsData.objects.filter(cow_id=cow_id).values_list('create_date', flat=True)
+    categories_datetime = BcsData.objects.filter(cow_id=cow_id).values_list('create_date', flat=True)
+    categories = [date_obj.strftime('%Y-%m-%d') for date_obj in categories_datetime]
     values = BcsData.objects.filter(cow_id=cow_id).values_list('score', flat=True)
 
     context = {
