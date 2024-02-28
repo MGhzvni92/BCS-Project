@@ -1,15 +1,20 @@
-from rest_framework import generics
+from rest_framework.views import APIView
 from bcs.models import BcsData
 from .serializers import BcsDataSerializer
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
+from rest_framework import status
 from rest_framework.status import HTTP_400_BAD_REQUEST
 
 
-class ImportView(generics.CreateAPIView):
-    queryset = BcsData.objects.all()
-    serializer_class = BcsDataSerializer
+class ImportView(APIView):
+    def post(self, request, format=None):
+        serializer = BcsDataSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class ApiLogin(ObtainAuthToken):
