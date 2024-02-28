@@ -9,6 +9,7 @@ v1_urlpatterns = [
 urlpatterns = [
     path('', include('home_module.urls')),
     path('', include('account_module.urls')),
+    path('chart/', include('chart.urls')),
     path('bcs/', include('bcs.urls')),
     path('admin/', admin.site.urls),
     path('api/v1/', include(v1_urlpatterns)),
