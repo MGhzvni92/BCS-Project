@@ -3,3 +3,4 @@ django-render-partial==0.4
 djangorestframework==3.14.0
 filelock==3.10.7
 mysqlclient==2.1.1
+pillow==10.2.0
