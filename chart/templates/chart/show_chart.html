@@ -10,16 +10,18 @@
 <div class="container">
     <form method="get" action="." style="margin: 10px;">
         <label for="cow_id">ID:</label>
-        <input type="number" required name="cow_id" id="cow_id" placeholder="Enter cow id" value="{{ cow.id }}"/>
+        <input type="number" required name="cow_id" id="cow_id" placeholder="Enter cow id" value="{{ cow.code }}"/>
         <input type="submit" value="Show Chart" >
     </form>
 
     <div class="row">
         <div class="col-3" style="height: 600px;">
             <h3>Cow information</h3>
-            <p>Id: {{ cow.id }}</p>
-            <p>Title: {{ cow.title }}</p>
-            <img src="{{ cow.picture.url }}" style="width: 100%;"/>
+            <p>Id: {{ cow.code }}</p>
+            <p>Title: {{ cow.title }}
+            {% if cow.picture %}
+                <img src="{{ cow.picture.url }}" style="width: 100%;"/>
+            {% endif %}
         </div>
         <div class="col-9 border" id="container" style="height: 600px;">
         </div>

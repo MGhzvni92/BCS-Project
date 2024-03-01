@@ -12,7 +12,8 @@ def show_chart(request):
     values = BcsData.objects.filter(cow_id=cow_id).values_list('score', flat=True)
 
     context = {
-        "categories": list(categories),
+        'cow': Cow.objects.get(code=cow_id),
+        'categories': list(categories),
         'values': list(values)
     }
 
