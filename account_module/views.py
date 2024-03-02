@@ -55,8 +55,7 @@ class LoginView(View):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            # Redirect to a success page.
-            ...
+            return redirect(reverse('chart:show_chart'))
         else:
             messages.add_message(request, messages.ERROR, "نام کاربری یا رمز عبور اشتباه است.")
             return render(request, 'account_module/LoginAdmin.html')
