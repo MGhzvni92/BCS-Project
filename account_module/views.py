@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.views import View
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -45,6 +45,12 @@ class RegisterView(View):
 
 
 class LoginView(View):
+
+    def dispatch(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect(reverse('chart:show_chart'))
+        return super(LoginView, self).dispatch(request)
+
     def get(self, request):
         return render(request, 'account_module/LoginAdmin.html')
 
@@ -59,3 +65,8 @@ class LoginView(View):
         else:
             messages.add_message(request, messages.ERROR, "نام کاربری یا رمز عبور اشتباه است.")
             return render(request, 'account_module/LoginAdmin.html')
+
+
+def log_out(request):
+    logout(request)
+    return redirect(reverse('home:index_page'))

@@ -32,7 +32,11 @@
                     <li><a href="">امکانات</a></li>
                     <li><a href="">تماس با ما</a></li>
                     <li><a href="">درباره ما</a></li>
-                    <li><a href="{% url 'account:login_page' %}">ورود به سیستم</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'account:log_out' %}">خروج</a></li>
+                    {% else %}
+                        <li><a href="{% url 'account:login_page' %}">ورود به سیستم</a></li>
+                    {% endif %}
                 </ul>
             </nav>
         </div>

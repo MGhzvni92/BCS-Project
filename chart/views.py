@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from bcs.models import Cow, BcsData
-from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def show_chart(request):
     cow_id = request.GET.get('cow_id')
     if not cow_id:
