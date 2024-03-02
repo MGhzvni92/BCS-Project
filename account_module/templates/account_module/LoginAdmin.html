@@ -18,19 +18,20 @@
     <section>
         <div class="form-container">
             <h1>صفحه ورود مدیران</h1>
-            <form action="#">
+            <form method="post">
                 <div class="form-control">
 <!--                    <label for="username">نام کاربری</label>-->
                     <input type="text" placeholder="نام کاربری" name="username" id="username">
                 </div>
                 <div class="form-control">
 <!--                    <label for="password">رمز عبور </label>-->
-                    <input type="password" placeholder="رمز عبور" name="username" id="password">
+                    <input type="password" placeholder="رمز عبور" name="password" id="password">
                 </div>
                 <span class="remember">
                     <input type="checkbox">
                     مرا به خاطر بسپار
                 </span>
+                {% csrf_token %}
                 <div class="form-control">
                     <input type="submit" value="ورود">
                 </div>

@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from django.contrib.auth import get_user_model
+from django.contrib.auth import authenticate, login
 from django.views import View
 from django.contrib.auth.models import User
-#from .models import User
+from django.contrib import messages
 from django.utils.crypto import get_random_string
 from account_module.forms import RegisterForm
 
@@ -46,11 +46,17 @@ class RegisterView(View):
 
 class LoginView(View):
     def get(self, request):
-        context = {
-            'login_form': None
-        }
-
-        return  render(request, 'account_module/register.html', context)
+        return render(request, 'account_module/LoginAdmin.html')
 
     def post(self, request):
-        pass
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            # Redirect to a success page.
+            ...
+        else:
+            messages.add_message(request, messages.ERROR, "نام کاربری یا رمز عبور اشتباه است.")
+            return render(request, 'account_module/LoginAdmin.html')
