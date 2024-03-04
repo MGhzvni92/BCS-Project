@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q@zccq!!t(_9%*5pwu)em--ju=+3i1_nb4etkk!=vow(19z$oh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+LOCAL = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'hoshmind.iran.liara.run']
 
 
 # Application definition
@@ -75,16 +76,36 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if DEBUG:
+    if LOCAL:
+        DATABASES = {
+             'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+             }
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': 'bcsdb',
+                'USER': 'root',
+                'PASSWORD': '======',
+                'HOST': 'bcsdb',
+                'PORT': '5432',
+            }
+        }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'bcsdb',
+            'USER': 'root',
+            'PASSWORD': '======',
+            'HOST': 'bcsdb',
+            'PORT': '5432',
+        }
     }
-}
 
 
 # Password validation
