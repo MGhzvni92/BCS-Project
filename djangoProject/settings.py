@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-q@zccq!!t(_9%*5pwu)em--ju=+3i1_nb4etkk!=vow(19z$oh
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-LOCAL = True
+LOCAL = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'hoshmind.iran.liara.run']
 
@@ -90,7 +90,7 @@ if DEBUG:
                 'ENGINE': 'django.db.backends.postgresql_psycopg2',
                 'NAME': 'bcsdb',
                 'USER': 'root',
-                'PASSWORD': '======',
+                'PASSWORD': 'hwPjwQnuZpeC96EMTWuN6Jyz',
                 'HOST': 'bcsdb',
                 'PORT': '5432',
             }
@@ -101,7 +101,7 @@ else:
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'bcsdb',
             'USER': 'root',
-            'PASSWORD': '======',
+            'PASSWORD': 'hwPjwQnuZpeC96EMTWuN6Jyz',
             'HOST': 'bcsdb',
             'PORT': '5432',
         }
